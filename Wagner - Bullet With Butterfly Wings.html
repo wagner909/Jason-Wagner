@@ -4,71 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wagner - Bullet With Butterfly Wings</title>
+    <style>
+/* 1) Universal Selector */
+      * { 
+        background-color: black;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: rgb(221, 15, 15); 
+      }
+/* 2) Type Selector */
+      h1 {
+        color: rgb(255, 81, 7);
+        text-align: center;
+        font-family: fantasy;
+        font-weight: lighter;
+        background-color: rgb(63, 75, 117); 
+      }
+/* 3) Class Selector */
+      .yell {
+        color: rgb(0, 248, 0);
+        font-weight: bold;
+        font-size: large;
+         }
+ /* 4) ID Selector */
+      #chorus strong {
+        color:white;
+         background-color: rgb(101, 177, 8); 
+       }
+/* 5) Child Selector */
+      p > a {
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+      
+      }
+/* 6) Descendant Selector */
+      p i {
+        font-style: italic;
+        color: rgb(1, 255, 255);
+        
+      }
+/* 7) Adjacent Sibling Combinator */
+      h1 + p {
+        color: rgb(253, 253, 6);
+        border: 2px solid rgb(0, 255, 242); /* just to see its there. */
+      }
+
+       /* should be everything */
+      
+    </style>
 </head>
 <body>
     <h1>Bullet With Butterfly Wings by Smashing Pumpkins</h1>
-  <hr> <p> 
-    The world is a <a href="https://en.wikipedia.org/wiki/Vampire">vampire</a><br>
-Sent to drain<br>
-Secret destroyers<br>
-Hold you up to the flames<br>
-And what do I get<br>
-For my pain?<br>
-Betrayed desires<br>
-And a piece of the game<br>
-<br>
-Even though I know<br>
-I suppose I'll show<br>
-All my cool and cold<br>
-Like ol' <i>Job</i><br>
-<br>
-<p><strong>Despite all my rage, I am still just a rat in a <a href="https://www.wayfair.com/Tucker-Murphy-Pet%E2%84%A2--Tucker-Murphy-Pet%E2%84%A2-Bird-Cages-2-Pcs-With-Roof-And-Door-Silver-Galvanized-Steel-X222257050-L1314-K~W111146949.html?refid=GX712337230772-W111146949&device=c&ptid=2386140137229&network=g&targetid=aud-356699937073:pla-2386140137229&channel=GooglePLA&ireid=311705503&fdid=1817&gad_source=1&gclid=CjwKCAiA74G9BhAEEiwA8kNfpbWUgofW5zwFj8vyDysechFA9Pl5NL7Ey1DiA1yrk7H_c-WluRd2OhoC4uUQAvD_BwE">cage</a><br>
-Despite all my rage, I am still just a rat in a cage<br>
-Someone will say, "What is lost can never be saved"<br>
-Despite all my rage, I am still just a rat in a cage</strong></p>
-<br>
-Now I'm naked<br>
-Nothing but an animal<br>
-But can you fake it<br>
-For just one more show?<br>
-And what do you want?<br>
-I wanna change<br>
-And what do you got!<br>
-When you feel the same?<br>
-<br>
-Even though I know<br>
-I suppose I'll show<br>
-All my cool and cold<br>
-Like ol' <i>Job</i><br>
-<br>
-<strong>Despite all my rage, I am still just a rat in a cage<br>
-Despite all my rage, I am still just a rat in a cage<br>
-Then someone will say, "What is lost can never be saved"<br>
-Despite all my rage, I am still just a rat in a cage!</strong><br>
-<br>
-Tell me I'm the only one<br>
-Tell me there's no other one<br>
-<i>Jesus</i> was an only son, yeah<br>
-Tell me I'm the chosen one<br>
-<i>Jesus</i> was an only son, for you<br>
-<br>
-<strong>Despite all my rage, I am still just a rat in a cage<br>
-Despite all my rage, I am still just a rat in a cage<br>
-And someone will say, "What is lost can never be saved"<br>
-Despite all my rage, I am still just a rat in a cage!<br>
-<br>
-Despite all my rage, I am still just a rat in a...<br>
-Despite all my rage, I am still just a rat in a...<br>
-Despite all my rage, I am still just a rat in a cage</strong><br>
-<br>
-Tell me I'm the only one<br>
-Tell me there's no other one<br>
-<i>Jesus</i> was an only son, for you<br>
-<br>
-And I still believe that I cannot be saved<br>
-And I still believe that I cannot be saved<br>
-And I still believe that I cannot be saved<br>
-And I still believe that I cannot be saved<br>
-</p>
+    
+    <p>
+        The world is a <a href="https://en.wikipedia.org/wiki/Vampire">vampire</a><br>
+        Sent to drain<br>
+        Secret destroyers<br>
+        Hold you up to the flames<br>
+        And what do I get<br>
+        For my pain?<br>
+        Betrayed desires<br>
+        And a piece of the game
+    </p>
+
+    <p>
+        Even though I know<br>
+        I suppose I'll show<br>
+        All my cool and cold<br>
+        Like ol' <i>Job</i>
+    </p>
+
+    <p id="chorus">
+        <strong>
+            Despite all my rage, I am still just a rat in a <a href="#">cage</a><br>
+            Despite all my rage, I am still just a rat in a cage<br>
+            Someone will say, "What is lost can never be saved"<br>
+            Despite all my rage, I am still just a rat in a cage
+        </strong>
+    </p>
+
+    <p>
+        Now I'm naked<br>
+        Nothing but an animal<br>
+        But can you fake it<br>
+        For just one more show?<br>
+        And what do you want?<br>
+        I wanna change<br>
+        And what do you got!<br>
+        When you feel the same?<br>
+        Even though I know<br>
+        I suppose I'll show<br>
+        All my cool and cold<br>
+        Like ol' <i>Job</i>
+    </p>
+
+    <p id="chorus"><strong>
+            Despite all my rage, I am still just a rat in a cage<br>
+            Despite all my rage, I am still just a rat in a cage<br>
+            Then someone will say, "What is lost can never be saved"<br>
+            Despite all my rage, I am still just a rat in a cage!
+        </strong>
+    </p>
+
+    <p>
+        Tell me I'm the only one<br>
+        Tell me there's no other one<br>
+        <i>Jesus</i> was an only son, yeah<br>
+        Tell me I'm the chosen one<br>
+        <i>Jesus</i> was an only son, for you
+    </p>
+
+    <p id="chorus"><strong>
+            Despite all my rage, I am still just a rat in a cage<br>
+            Despite all my rage, I am still just a rat in a cage<br>
+            And someone will say, "What is lost can never be saved"<br>
+            Despite all my rage, I am still just a rat in a <span class="yell">CAGE!</span>
+        </strong>
+    </p>
+
+    <p>
+        Despite all my rage, I am still just a rat in a...<br>
+        Despite all my rage, I am still just a rat in a...<br>
+        Despite all my rage, I am still just a rat in a Cage<br>
+        <br>
+    
+        Tell me I'm the only one<br>
+        Tell me there's no other one<br>
+        <i>Jesus</i> was an only son, for you
+    </p>
+
+    <p>
+        And I still believe that I cannot be saved<br>
+        And I still believe that I cannot be saved<br>
+        And I still believe that I cannot be saved<br>
+        And I still believe that I cannot be saved
+    </p>
+
 </body>
 </html>
