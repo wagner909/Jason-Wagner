@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risotto Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+      
+    </style>
+</head>
+<body>
+    <svg width="500" height="300">
+        <defs>
+            <!-- Define a path for the text to follow -->
+            <path id="textPath" d="M 100,200 A 150,150 0 0,1 400,200" fill="none" stroke="black"/>
+        </defs>
+        <!-- Apply the text to the path -->
+        <text font-size="40" font-family="Arial" font-weight="bold" fill="black">
+            <textPath xlink:href="#textPath" startOffset="50%" text-anchor="middle">Risotto</textPath>
+        </text>
+    </svg>
+</body>
+</html>
