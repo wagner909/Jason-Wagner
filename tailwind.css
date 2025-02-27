@@ -1,0 +1,3 @@
+@tailwind base;  /* Includes Tailwind's base styles (like CSS resets) */
+@tailwind components;  /* Allows defining reusable components if needed */
+@tailwind utilities; 
