@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where's The Risotto?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            place-items: center; /* Centers everything */
+            height: 100vh;
+            background-color: #ffffff;
+            margin: 0;
+        }
+        .container {
+            width: 50%;
+            background-color: rgb(230, 230, 230);
+            padding: 5px;
+            border: 3px solid pink;
+            box-sizing: border-box;
+            display: grid;
+            gap: 10px;
+        }
+        .content {
+            border: 5px solid red;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .separator {
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            margin: 20px 0;
+        }
+        .separator2 {
+            width: 5%;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto; /* Centers it horizontally with proper spacing */
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            font-weight: bold;
+            text-align: center;
+        }
+        .ingredients {
+            margin-top: 20px;
+            text-align: center;
+            display: grid;
+            font-weight: bold;
+        }
+        .svg-title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="svg-title">
+                <svg width="300" height="100" viewBox="0 0 300 100">
+                    <path id="curve" d="M10,90 Q150,-30 290,90" fill="transparent"/>
+                    <text font-size="20" font-family="Arial" font-weight="bold" text-anchor="middle">
+                        <textPath xlink:href="#curve" startOffset="50%" fill="black">RISOTTO</textPath>
+                    </text>
+                </svg>
+            </div>
+            <p><strong>Risotto is a dish from northern Italy made with rice and stock (a liquid flavored with ingredients such as vegetables or chicken).
+                The most important ingredient is good quality risotto rice, ideally carnaroli or vialone nano, both of
+                which are available from good food shops. When cooked, this 
+                rice has a firm texture as well as a creamy softness. 
+                This may be hard to imagine, but when you have cooked a good risotto, you'll see what I mean.
+            </strong></p>
+            <p><strong>Once you know how to make a basic risotto, you can add other ingredients, like vegetables or meat. In Milan, risotto 
+                is made with saffron, which adds a beautiful golden color.</strong></p>
+            <div class="separator"></div>
+            <div class="categories">
+                <div><strong>Serves:</strong><br> 4</div>
+                <div><strong>Preparation Time:</strong><br> 10 minutes</div>
+                <div><strong>Cooking Time:</strong><br> 40 minutes</div>
+            </div>
+            <div class="separator"></div>
+            <div class="ingredients">
+                <p class="ingredient-item">1 &frac12; ounces Parmesan cheese</p>
+                <div class="separator2"></div>
+                <p class="ingredient-item">5-6 &frac14; cups vegetable or chicken stock<br>
+                (if you are not using fresh stock, use a good<br>
+                vegetable bouillon powder)</p>
+                <div class="separator2"></div>
+                <p class="ingredient-item">1 Onion</p>
+                <div class="separator2"></div>
+                <p class="ingredient-item">3 tablespoons sweet butter</p>
+                <div class="separator2"></div>
+                <p class="ingredient-item">1 tablespoon olive oil</p>
+                <div class="separator2"></div>
+                <p class="ingredient-item">scant 1 &frac34; cups risotto rice</p>
+                <div class="separator2"></div>
+                <p class="ingredient-item">&frac12; teaspoon saffron threads</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
